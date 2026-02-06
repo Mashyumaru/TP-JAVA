@@ -6,6 +6,8 @@
   <persistence-unit name="pu">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <class>epsi.b3.bibliotheque.Livre</class>
+    <class>epsi.b3.bibliotheque.Client</class>
+    <class>epsi.b3.bibliotheque.Emprunt</class>
     <properties>
       <property name="jakarta.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/demo"/>
       <property name="jakarta.persistence.jdbc.user" value="admin"/>
