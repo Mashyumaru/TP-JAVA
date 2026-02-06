@@ -2,12 +2,13 @@ package epsi.b3.bibliotheque;
 
 import jakarta.persistence.*;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
 @Table(name = "EMPRUNT")
-public class Emprunt {
+public class Emprunt implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
