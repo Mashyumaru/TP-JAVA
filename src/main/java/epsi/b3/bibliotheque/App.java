@@ -11,7 +11,7 @@ import java.util.List;
 public class App {
     static void main() {
         try(EntityManagerFactory emf = Persistence.createEntityManagerFactory("pu");
-            EntityManager em = emf.createEntityManager();
+            EntityManager em = emf.createEntityManager()
         ){
             em.getTransaction().begin();
 
